@@ -6,6 +6,9 @@ class Wall:
     def get_cost(self):
         return self.armor * self.height
 
+    def get_cost(self):
+        return self.armor * self.height
+
     # don't touch below this line
 
     def fortify(self):

@@ -24,7 +24,11 @@ class Archer(Human):
 class Crossbowman(Archer):
     def __init__(self, name, num_arrows):
         super().__init__(name, num_arrows)
+        super().__init__(name, num_arrows)
 
     def triple_shot(self, target):
+        self.use_arrows(3)
+        return f"{target} was shot by 3 crossbow bolts"
+
         self.use_arrows(3)
         return f"{target} was shot by 3 crossbow bolts"

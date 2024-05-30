@@ -2,6 +2,8 @@ class Student:
     def __init__(self, name):
         self.name = name
         self.__courses = {}
+        self.name = name
+        self.__courses = {}
 
     def calculate_letter_grade(self, score):
         if score >= 90:
@@ -17,6 +19,9 @@ class Student:
 
     def add_course(self, course_name, score):
         self.__courses[course_name] = self.calculate_letter_grade(score)
+        self.__courses[course_name] = self.calculate_letter_grade(score)
 
     def get_courses(self):
+        return self.__courses
+
         return self.__courses

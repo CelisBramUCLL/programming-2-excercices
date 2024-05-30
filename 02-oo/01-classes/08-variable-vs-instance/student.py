@@ -2,6 +2,7 @@ class Dragon:
 
     def __init__(self, element):
         self.element = element
+        self.element = element
 
     def get_breath_damage(self):
         if self.element == "fire":

@@ -3,6 +3,9 @@ class Archer:
         self.name = name
         self.health = health
         self.num_arrows = num_arrows
+        self.name = name
+        self.health = health
+        self.num_arrows = num_arrows
 
     def get_shot(self):
         if self.health > 0:
